@@ -23,13 +23,13 @@ $White: hsl(0, 0%, 100%);
 }
 
 .df {
-	display: flex;
-
 	&-col {
+		display: flex;
 		flex-direction: column;
 	}
 
 	&-row {
+		display: flex;
 		flex-direction: row;
 	}
 }
@@ -70,6 +70,10 @@ $White: hsl(0, 0%, 100%);
 	display: none !important;
 }
 
+.p20 {
+	padding: 20px;
+}
+
 .burger-close {
 	background: none;
 	border: none;
@@ -94,6 +98,40 @@ $White: hsl(0, 0%, 100%);
 
 	&:hover {
 		background: linear-gradient(33deg, hsl(136, 57%, 61%) 0%, hsl(192, 62%, 59%) 100%);
+	}
+}
+
+header {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+
+	>.logo-brand {
+		width: 100%;
+		height: auto;
+		background-color: $White;
+		margin-bottom: 20px;
+	}
+
+	>.navigation {
+		width: 100%;
+		height: auto;
+
+		>ul {
+			width: 100%;
+			height: auto;
+			background-color: $White;
+			border-radius: 15px;
+
+			>li {
+				margin: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 400;
+				font-size: 14px;
+			}
+		}
 	}
 }
 

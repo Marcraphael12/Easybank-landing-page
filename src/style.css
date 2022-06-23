@@ -7,13 +7,12 @@
   font-family: "Public Sans", sans-serif;
 }
 
-.df {
-  display: flex;
-}
 .df-col {
+  display: flex;
   flex-direction: column;
 }
 .df-row {
+  display: flex;
   flex-direction: row;
 }
 
@@ -44,6 +43,10 @@
   display: none !important;
 }
 
+.p20 {
+  padding: 20px;
+}
+
 .burger-close {
   background: none;
   border: none;
@@ -67,6 +70,36 @@
 }
 .request-invite:hover {
   background: linear-gradient(33deg, hsl(136deg, 57%, 61%) 0%, hsl(192deg, 62%, 59%) 100%);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233deg, 8%, 62%, 0.379) 70%);
+}
+header > .logo-brand {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+}
+header > .navigation {
+  width: 100%;
+  height: auto;
+}
+header > .navigation > ul {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+}
+header > .navigation > ul > li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .attribution {
