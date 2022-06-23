@@ -30,9 +30,12 @@ module.exports = {
       },
 
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/i,
-				type: 'asset/resource',
-			},
+        test: /\.(jpe?g|png|gif|svg)$/i, 
+        loader: 'file-loader',
+        options: {
+          name: '/public/icons/[name].[ext]'
+        }
+      }
     ],
   },
 
