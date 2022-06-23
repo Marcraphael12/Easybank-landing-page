@@ -66,6 +66,22 @@ $White: hsl(0, 0%, 100%);
 	}
 }
 
+.dn {
+	display: none !important;
+}
+
+.burger-close {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	
+	>img {
+		width: inherit;
+		height: inherit;
+	}
+}
+
 .request-invite {
 	padding: 10px 25px;
 	border-radius: 25px;

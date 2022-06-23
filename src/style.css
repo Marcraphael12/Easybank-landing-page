@@ -40,6 +40,21 @@
   align-items: flex-start;
 }
 
+.dn {
+  display: none !important;
+}
+
+.burger-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+.burger-close > img {
+  width: inherit;
+  height: inherit;
+}
+
 .request-invite {
   padding: 10px 25px;
   border-radius: 25px;
