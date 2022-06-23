@@ -148,6 +148,59 @@ main .intro .block > p {
   line-height: 20px;
   margin-bottom: 20px;
 }
+main .features {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0deg, 0%, 98%);
+}
+main .features .block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+main .features .block > h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+main .features .block > p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+main .features .features-list > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .features .features-list > li > img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+main .features .features-list > li > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+main .features .features-list > li > p {
+  font-size: 12px;
+  font-weight: 300;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 20px;
+  text-align: center;
+}
 
 .attribution {
   font-size: 11px;
