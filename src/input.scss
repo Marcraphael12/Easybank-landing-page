@@ -1,3 +1,86 @@
+//Colors
+
+//Primary
+
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+// Neutral
+
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Public Sans', sans-serif;
+}
+
+.df {
+	display: flex;
+
+	&-col {
+		flex-direction: column;
+	}
+
+	&-row {
+		flex-direction: row;
+	}
+}
+
+.just {
+	&-cen {
+		justify-content: center;
+	}
+
+	&-end {
+		justify-content: flex-end;
+	}
+
+	&-start {
+		justify-content: flex-start;
+	}
+
+	&-spa-bet {
+		justify-content: space-between;
+	}
+}
+
+.al {
+	&-cen {
+		align-items: center;
+	}
+
+	&-end {
+		align-items: flex-end;
+	}
+
+	&-start {
+		align-items: flex-start;
+	}
+}
+
+.request-invite {
+	padding: 10px 25px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	color: $White;
+	font-size: 12px;
+	font-weight: 700;
+	background: linear-gradient(33deg, $Lime-Green 0%, $Bright-Cyan 100%);
+
+	&:hover {
+		background: linear-gradient(33deg, hsl(136, 57%, 61%) 0%, hsl(192, 62%, 59%) 100%);
+	}
+}
+
 .attribution {
 	font-size: 11px; text-align: center;
 
