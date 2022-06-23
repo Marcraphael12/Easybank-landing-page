@@ -59,8 +59,8 @@
 }
 
 .request-invite {
-  padding: 10px 25px;
-  border-radius: 25px;
+  padding: 15px 35px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   color: hsl(0deg, 0%, 100%);
@@ -76,12 +76,12 @@ header {
   width: 100%;
   height: auto;
   background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233deg, 8%, 62%, 0.379) 70%);
+  position: fixed;
 }
 header > .logo-brand {
   width: 100%;
   height: auto;
   background-color: hsl(0deg, 0%, 100%);
-  margin-bottom: 20px;
 }
 header > .navigation {
   width: 100%;
@@ -102,16 +102,59 @@ header > .navigation > ul > li {
   font-size: 14px;
 }
 
+main {
+  width: 100%;
+  height: auto;
+}
+main .intro {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  background-image: url(./public/icons/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% auto;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+main .intro > .mockups {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+main .intro > .mockups > img {
+  width: 100%;
+  height: auto;
+}
+main .intro .block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+main .intro .block > h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(233deg, 26%, 24%);
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+main .intro .block > p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
-}
-
-body {
-  background-image: url(./public/icons/bg-intro-desktop.svg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,9 @@
 import _ from 'lodash';
 import './style.css';
 
+// intro section's import
+import mockups from './public/icons/image-mockups.png';
+
 // features section's imports
 import logo from './public/icons/logo.svg';
 import burger from './public/icons/icon_hamburger.svg';
