@@ -87,8 +87,8 @@ $White: hsl(0, 0%, 100%);
 }
 
 .request-invite {
-	padding: 10px 25px;
-	border-radius: 25px;
+	padding: 15px 35px;
+	border-radius: 30px;
 	border: none;
 	cursor: pointer;
 	color: $White;
@@ -105,12 +105,12 @@ header {
 	width: 100%;
 	height: auto;
 	background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+	position: fixed;
 
 	>.logo-brand {
 		width: 100%;
 		height: auto;
 		background-color: $White;
-		margin-bottom: 20px;
 	}
 
 	>.navigation {
@@ -135,14 +135,63 @@ header {
 	}
 }
 
+main {
+	width: 100%;
+	height: auto;
+
+	.intro {
+		width: 100%;
+		height: auto;
+		background-color: $White;
+		background-image: url(./public/icons/bg-intro-mobile.svg);
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 100% auto;
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 20px;
+
+		>.mockups {
+			width: 100%;
+			height: auto;
+			margin-bottom: 30px;
+
+			>img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.block {
+			width: 100%;
+			height: auto;
+			margin-bottom: 30px;
+
+			>h2 {
+				text-align: center;
+				font-size: 30px;
+				font-weight: 700;
+				color: $Dark-Blue;
+				line-height: 40px;
+				margin-bottom: 20px;
+			}
+
+			>p {
+				text-align: center;
+				font-size: 14px;
+				font-weight: 400;
+				color: $Grayish-Blue;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
 .attribution {
 	font-size: 11px; text-align: center;
 
 	a {
 		color: hsl(228, 45%, 44%);
 	}
-}
-
-body {
-	background-image: url(./public/icons/bg-intro-desktop.svg);
 }
