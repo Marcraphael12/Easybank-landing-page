@@ -1,10 +1,15 @@
 import _ from 'lodash';
 import './style.css';
 
+// background impoert
+import backgroundMobile from './public/icons/bg-intro-mobile.svg';
+import backgroundDesktop from './public/icons/bg-intro-desktop.svg';
+
 // intro section's import
 import mockups from './public/icons/image-mockups.png';
 
 // features section's imports
+import logoWhhite from './public/icons/logowhite.svg';
 import logo from './public/icons/logo.svg';
 import burger from './public/icons/icon_hamburger.svg';
 import close from './public/icons/icon-close.svg';
