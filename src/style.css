@@ -112,6 +112,8 @@ main .intro {
   background-color: hsl(0deg, 0%, 100%);
   background-image: url(./public/icons/bg-intro-mobile.svg);
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
   padding: 20px;
   margin-bottom: 20px;
 }
