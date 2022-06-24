@@ -3,7 +3,7 @@
 
 .intro {
 	// code set for tablet
-	@include devices(tablet) {
+	@include devices(420) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
