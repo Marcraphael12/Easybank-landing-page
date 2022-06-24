@@ -145,9 +145,6 @@ main {
 		background-color: $White;
 		background-image: url(./public/icons/bg-intro-mobile.svg);
 		background-repeat: no-repeat;
-		background-position: top right;
-		background-size: 100% auto;
-		border-radius: 15px;
 		padding: 20px;
 		margin-bottom: 20px;
 
@@ -155,6 +152,7 @@ main {
 			width: 100%;
 			height: auto;
 			margin-bottom: 30px;
+			background: transparent;
 
 			>img {
 				width: 100%;
@@ -251,10 +249,110 @@ main {
 	}
 }
 
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: $Dark-Blue;
+
+	.level1 {
+		width: 100%;
+		height: auto;
+		background-color: $Dark-Blue;
+
+		>.socials-infos {
+			width: 100%;
+			height: auto;
+
+			.socials {
+				width: 100%;
+				height: auto;
+				margin-bottom: 30px;
+
+				>img {
+					margin-bottom: 20px;
+				}
+
+				>ul {
+					width: 185px;
+					height: auto;
+					
+					>.social {
+						width: 13%;
+						height: auto;
+
+						>a {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+
+							>img {
+								width: 100%;
+								height: auto;
+							}
+						}
+					}
+				}
+			}
+
+			.infos {
+				width: 100%;
+				height: auto;
+				margin-bottom: 10px;
+
+				>ul {
+					width: 100%;
+					height: auto;
+
+					>li {
+
+						>a {
+							margin-bottom: 20px;
+							font-size: 14px;
+							font-weight: 300;
+							color: $Very-Light-Gray;
+
+							&:hover {
+								color: $Bright-Cyan;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		>.copy {
+			>div {
+				width: 100%;
+				height: auto;
+
+				>button {
+					margin-bottom: 20px;
+				}
+
+				>p {
+					width: 100%;
+					height: auto;
+					font-size: 14px;
+					font-weight: 400;
+					color: $Grayish-Blue;
+				}
+			}
+		}
+	}
+}
+
 .attribution {
-	font-size: 11px; text-align: center;
+	font-size: 10px;
+	font-weight: 300;
+	text-align: center;
+	color: $White;
 
 	a {
-		color: hsl(228, 45%, 44%);
+		color: $Bright-Cyan;
+
+		&:hover {
+			color: $Bright-Cyan;
+		}
 	}
 }

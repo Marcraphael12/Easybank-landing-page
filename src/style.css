@@ -112,9 +112,6 @@ main .intro {
   background-color: hsl(0deg, 0%, 100%);
   background-image: url(./public/icons/bg-intro-mobile.svg);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% auto;
-  border-radius: 15px;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -122,6 +119,7 @@ main .intro > .mockups {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
+  background: transparent;
 }
 main .intro > .mockups > img {
   width: 100%;
@@ -202,12 +200,90 @@ main .features .features-list > li > p {
   text-align: center;
 }
 
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: hsl(233deg, 26%, 24%);
+}
+.footer .level1 {
+  width: 100%;
+  height: auto;
+  background-color: hsl(233deg, 26%, 24%);
+}
+.footer .level1 > .socials-infos {
+  width: 100%;
+  height: auto;
+}
+.footer .level1 > .socials-infos .socials {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.footer .level1 > .socials-infos .socials > img {
+  margin-bottom: 20px;
+}
+.footer .level1 > .socials-infos .socials > ul {
+  width: 185px;
+  height: auto;
+}
+.footer .level1 > .socials-infos .socials > ul > .social {
+  width: 13%;
+  height: auto;
+}
+.footer .level1 > .socials-infos .socials > ul > .social > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .level1 > .socials-infos .socials > ul > .social > a > img {
+  width: 100%;
+  height: auto;
+}
+.footer .level1 > .socials-infos .infos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.footer .level1 > .socials-infos .infos > ul {
+  width: 100%;
+  height: auto;
+}
+.footer .level1 > .socials-infos .infos > ul > li > a {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 98%);
+}
+.footer .level1 > .socials-infos .infos > ul > li > a:hover {
+  color: hsl(192deg, 70%, 51%);
+}
+.footer .level1 > .copy > div {
+  width: 100%;
+  height: auto;
+}
+.footer .level1 > .copy > div > button {
+  margin-bottom: 20px;
+}
+.footer .level1 > .copy > div > p {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(233deg, 8%, 62%);
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 10px;
+  font-weight: 300;
   text-align: center;
+  color: hsl(0deg, 0%, 100%);
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(192deg, 70%, 51%);
+}
+.attribution a:hover {
+  color: hsl(192deg, 70%, 51%);
 }
 
 /*# sourceMappingURL=style.css.map */
