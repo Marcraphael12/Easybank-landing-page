@@ -1,0 +1,15 @@
+// mixins import
+@import '../mixins.scss';
+
+.features {
+	// code set for tablet
+	@include devices(420) {
+		.features-list {
+			width: 100%;
+			height: auto;
+			>li {
+				max-width: 400px;
+			}
+		}
+	}
+}
