@@ -1,0 +1,29 @@
+// mixins import
+@import '../mixins.scss';
+
+.footer {
+	@include devices(420) {
+		.level1 {
+			>.socials-infos {
+				>.infos {
+					align-items: center;
+					
+					>ul {
+						flex-direction: row;
+						max-width: 200px;
+						justify-content: space-between;
+
+						>li {
+							width: 45%;
+							align-items: flex-start;
+
+							&:last-child {
+								align-items: flex-end;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
