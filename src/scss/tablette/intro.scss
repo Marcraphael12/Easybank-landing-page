@@ -1,0 +1,14 @@
+// mixins import
+@import '../mixins.scss';
+
+.intro {
+	// code set for tablet
+	@include devices(tablet) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.block {
+			max-width: 420px;
+		}
+	}
+}
