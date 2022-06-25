@@ -3,12 +3,33 @@
 
 .features {
 	// code set for tablet
-	@include devices(420) {
-		.features-list {
+	>.block {
+		@include devices(600) {
+			max-width: 500px;
+			align-self: center;
+		}
+	}
+
+	.features-list {
+		@include devices(420) {
 			width: 100%;
 			height: auto;
-			>li {
-				max-width: 400px;
+			align-self: center;
+		}
+
+		@include devices(600) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		>li {
+			@include devices(420) {
+				max-width: 260px;
+			}
+
+			@include devices(600) {
+				width: 45%;
 			}
 		}
 	}
