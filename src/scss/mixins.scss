@@ -6,8 +6,8 @@
 		}
 	}
 
-	@if $breakpoint == desktop {
-		@media only screen and (min-width: 481px) {
+	@if $breakpoint == 500 {
+		@media only screen and (min-width: 500px) {
 			@content;
 		}
 	}
