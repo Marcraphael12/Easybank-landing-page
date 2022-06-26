@@ -9,6 +9,92 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .features > .block {
+    max-width: 500px;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .features .features-list {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .features .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .features .features-list > li {
+    max-width: 260px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .features .features-list > li {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .socials > img {
+    margin-bottom: 40px !important;
+    align-self: flex-start;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .socials > .social {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos {
+    max-width: 290px;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos > ul {
+    flex-direction: row;
+    max-width: 200px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos > ul {
+    max-width: 290px;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos > ul > li {
+    width: 45%;
+    align-items: flex-start;
+  }
+  .footer .level1 > .socials-infos > .infos > ul > li:last-child {
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos > ul > li:last-child {
+    align-items: flex-start;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -144,6 +230,8 @@ main .intro .block {
   margin-bottom: 30px;
 }
 main .intro .block > h2 {
+  width: 100%;
+  max-width: 290px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -225,10 +313,12 @@ main .features .features-list > li > p {
 }
 .footer .level1 > .socials-infos {
   width: 100%;
+  max-width: 571px;
   height: auto;
 }
 .footer .level1 > .socials-infos .socials {
   width: 100%;
+  max-width: 185px;
   height: auto;
   margin-bottom: 30px;
 }
@@ -279,6 +369,7 @@ main .features .features-list > li > p {
   margin-bottom: 20px;
 }
 .footer .level1 > .copy > div > p {
+  text-align: center;
   width: 100%;
   height: auto;
   font-size: 14px;
