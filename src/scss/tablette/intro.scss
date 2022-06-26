@@ -7,8 +7,45 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.block {
+	}
+
+	@include devices(700) {
+		flex-direction: row-reverse;
+		background-image: url('./public/icons/bg-intro-desktop.svg');
+		align-items: flex-start;
+	}
+
+	>.mockups {
+		@include devices(700) {
+
+		}
+	}
+
+	.block {
+		@include devices(420) {
 			max-width: 420px;
+		}
+
+		@include devices(700) {
+			max-width: 370px;
+			align-items: flex-start;
+			margin-top: 200px;
+		}
+
+		>h2 {
+			@include devices(700) {
+				text-align: left !important;
+				font-size: 40px !important;
+				font-weight: 400 !important;
+			}
+		}
+
+		>p {
+			@include devices(700) {
+				text-align: left !important;
+				font-size: 15px !important;
+				font-weight: 300 !important;
+			}
 		}
 	}
 }
