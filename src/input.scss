@@ -127,6 +127,7 @@ header {
 		}
 
 		>.navigation {
+			display: none;
 			width: 100%;
 			height: auto;
 
@@ -145,6 +146,10 @@ header {
 					font-size: 14px;
 				}
 			}
+		}
+
+		>button {
+			display: none;
 		}
 	}
 }
