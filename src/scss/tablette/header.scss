@@ -18,7 +18,7 @@ header {
 
 			>.navigation {
 				padding: 0;
-				display: flex;
+				display: flex !important;
 				max-width: 330px;
 				>ul {
 					border-radius: 0;
@@ -27,7 +27,7 @@ header {
 			}
 
 			>button {
-				display: block;
+				display: block !important;
 			}
 		}
 	}
