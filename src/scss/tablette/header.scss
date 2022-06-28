@@ -5,7 +5,13 @@ header {
 
 	>div {
 		@include devices (700) {
+			>.logo-brand {
 
+			}
+
+			>.navigation {
+				
+			}
 		}
 	}
 }
