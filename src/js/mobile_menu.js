@@ -30,7 +30,8 @@ const Close_menu = (button) => {
 		navigation.style.display = 'none';
 
 		request_invite.style.display = 'none';
-		
+		request_invite.style.marginTop = '0';
+
 		header.classList.remove('full-height');
 		head.classList.remove('cover');
 	})
