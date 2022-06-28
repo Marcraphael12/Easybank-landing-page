@@ -110,9 +110,9 @@ $White: hsl(0, 0%, 100%);
 
 .cover {
 	height: 100%;
-	padding: 20px;
+	padding-bottom: 20px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .full-height {
