@@ -108,6 +108,17 @@ $White: hsl(0, 0%, 100%);
 	}
 }
 
+.cover {
+	height: 100%;
+	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.full-height {
+	height: 100vh;
+}
+
 header {
 	width: 100%;
 	height: auto;
