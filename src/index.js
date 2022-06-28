@@ -24,3 +24,12 @@ import twitter from './public/icons/icon-twitter.svg';
 import instagram from './public/icons/icon-instagram.svg';
 import youtube from './public/icons/icon-youtube.svg';
 import pinterest from './public/icons/icon-pinterest.svg';
+
+//mobile menu imports
+import {Open_menu, Close_menu} from './js/mobile_menu.js';
+
+const burger_open = document.querySelector('.burger-open');
+const burger_close = document.querySelector('.burger-close');
+
+Open_menu(burger_open);
+Close_menu(burger_close);
