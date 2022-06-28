@@ -11,6 +11,7 @@
 
 		@include devices(700) {
 			max-width: 550px;
+			align-self: flex-start !important;
 		}
 
 		>h2 {
@@ -42,13 +43,40 @@
 			justify-content: space-around;
 		}
 
+		@include devices(700) {
+			justify-content: space-between !important;
+		}
+
 		>li {
 			@include devices(420) {
-				max-width: 260px;
+				max-width: 220px;
 			}
 
 			@include devices(600) {
 				width: 45%;
+			}
+
+			@include devices (700) {
+				align-items: flex-start !important;
+
+				>img {
+					width: 70px !important;
+					height: 70px !important;
+				}
+
+				>h3 {
+					font-size: 18px !important;
+				}
+
+			}
+
+			>p {
+				@include devices(700) {
+					text-align: start !important;
+					font-size: 13px !important;
+					font-weight: 400 !important;
+					max-width: 204px;
+				}
 			}
 		}
 	}
