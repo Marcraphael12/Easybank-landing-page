@@ -6,7 +6,16 @@ const request_invite = document.querySelector('.request-invite');
 
 const Open_menu = (button) => {
 	button.addEventListener('click', () => {
-		burger_open.classList.toggle('dn');
-		burger_close.classList.toggle('df-row');
+		burger_open.classList.add('dn');
+		burger_close.classList.remove('dn');
 	})
 }
+
+const Close_menu = (button) => {
+	button.addEventListener('click', () => {
+		burger_open.classList.remove('dn');
+		burger_close.classList.add('dn');
+	})
+}
+
+export { Open_menu, Close_menu };
