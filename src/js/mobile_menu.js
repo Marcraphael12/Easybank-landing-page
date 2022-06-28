@@ -9,6 +9,7 @@ const Open_menu = (button) => {
 		burger_open.classList.add('dn');
 		burger_close.classList.remove('dn');
 		navigation.style.display = 'flex';
+		request_invite.style.display = 'block';
 	})
 }
 
@@ -17,6 +18,7 @@ const Close_menu = (button) => {
 		burger_open.classList.remove('dn');
 		burger_close.classList.add('dn');
 		navigation.style.display = 'none';
+		request_invite.style.display = 'none';
 	})
 }
 
