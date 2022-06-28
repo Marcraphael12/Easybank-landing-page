@@ -8,6 +8,7 @@ const Open_menu = (button) => {
 	button.addEventListener('click', () => {
 		burger_open.classList.add('dn');
 		burger_close.classList.remove('dn');
+		navigation.style.display = 'flex';
 	})
 }
 
@@ -15,6 +16,7 @@ const Close_menu = (button) => {
 	button.addEventListener('click', () => {
 		burger_open.classList.remove('dn');
 		burger_close.classList.add('dn');
+		navigation.style.display = 'none';
 	})
 }
 
