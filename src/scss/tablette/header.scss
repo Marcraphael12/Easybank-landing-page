@@ -1,0 +1,11 @@
+// mixins import
+@import '../mixins.scss';
+
+header {
+
+	>div {
+		@include devices (700) {
+
+		}
+	}
+}
