@@ -2,9 +2,9 @@
 @import '../mixins.scss';
 
 header {
-
+	@include devices (700) {
+		background: #fff;
 	>div {
-		@include devices (700) {
 			flex-direction: row !important;
 			padding: 0;
 			background: #fff;
