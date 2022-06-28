@@ -127,6 +127,7 @@ header {
 		}
 
 		>.navigation {
+			display: none;
 			width: 100%;
 			height: auto;
 
@@ -146,8 +147,14 @@ header {
 				}
 			}
 		}
+
+		>button {
+			display: none;
+		}
 	}
 }
+
+@import './scss/tablette/header.scss';
 
 main {
 	width: 100%;

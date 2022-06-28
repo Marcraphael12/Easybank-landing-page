@@ -275,6 +275,7 @@ header > div > .logo-brand {
   background-color: hsl(0deg, 0%, 100%);
 }
 header > div > .navigation {
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -291,6 +292,35 @@ header > div > .navigation > ul > li {
   justify-content: center;
   font-weight: 400;
   font-size: 14px;
+}
+header > div > button {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  header > div {
+    flex-direction: row !important;
+    padding: 0;
+    background: #fff;
+  }
+  header > div > .logo-brand {
+    width: auto;
+  }
+  header > div > .logo-brand > button {
+    display: none;
+  }
+  header > div > .navigation {
+    padding: 0;
+    display: flex;
+    max-width: 330px;
+  }
+  header > div > .navigation > ul {
+    border-radius: 0;
+    flex-direction: row;
+  }
+  header > div > button {
+    display: block;
+  }
 }
 
 main {

@@ -1,0 +1,34 @@
+// mixins import
+@import '../mixins.scss';
+
+header {
+
+	>div {
+		@include devices (700) {
+			flex-direction: row !important;
+			padding: 0;
+			background: #fff;
+
+			>.logo-brand {
+				width: auto;
+				>button {
+					display: none;
+				}
+			}
+
+			>.navigation {
+				padding: 0;
+				display: flex;
+				max-width: 330px;
+				>ul {
+					border-radius: 0;
+					flex-direction: row;
+				}
+			}
+
+			>button {
+				display: block;
+			}
+		}
+	}
+}
