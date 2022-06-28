@@ -1,3 +1,188 @@
+@media only screen and (min-width: 420px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro {
+    background-image: url("./public/icons/bg-intro-desktop.svg");
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro > .intro-block {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .intro > .intro-block .block {
+    max-width: 420px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro > .intro-block .block {
+    max-width: 370px;
+    align-items: flex-start;
+    margin-top: 200px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro > .intro-block .block > h2 {
+    text-align: left !important;
+    font-size: 40px !important;
+    font-weight: 400 !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro > .intro-block .block > p {
+    text-align: left !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .features > .block {
+    max-width: 500px;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features > .block {
+    max-width: 550px;
+    align-self: flex-start !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features > .block > h2 {
+    font-size: 32px !important;
+    text-align: left !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features > .block > p {
+    font-size: 15px !important;
+    text-align: left !important;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .features .features-list {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .features .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features .features-list {
+    justify-content: space-between !important;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .features .features-list > li {
+    max-width: 220px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .features .features-list > li {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features .features-list > li {
+    align-items: flex-start !important;
+  }
+  .features .features-list > li > img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .features .features-list > li > h3 {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .features .features-list > li > p {
+    text-align: start !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    max-width: 204px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-width: 700px) {
+  .footer .level1 {
+    flex-direction: row !important;
+    max-width: 1120px;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .socials > img {
+    margin-bottom: 40px !important;
+    align-self: flex-start;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .socials > .social {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos {
+    max-width: 290px;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos > ul {
+    flex-direction: row;
+    max-width: 200px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos > ul {
+    max-width: 290px;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .footer .level1 > .socials-infos > .infos > ul > li {
+    width: 45%;
+    align-items: flex-start;
+  }
+  .footer .level1 > .socials-infos > .infos > ul > li:last-child {
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .socials-infos > .infos > ul > li:last-child {
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 420px) and (min-width: 600px) {
+  .footer .level1 > .copy > div {
+    align-items: flex-end;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -75,25 +260,31 @@
 header {
   width: 100%;
   height: auto;
-  background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233deg, 8%, 62%, 0.379) 70%);
+  background-color: hsl(0deg, 0%, 100%);
   position: fixed;
 }
-header > .logo-brand {
+header > div {
+  width: 100%;
+  max-width: 1120px;
+  background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233deg, 8%, 62%, 0.379) 70%);
+  align-self: center;
+}
+header > div > .logo-brand {
   width: 100%;
   height: auto;
   background-color: hsl(0deg, 0%, 100%);
 }
-header > .navigation {
+header > div > .navigation {
   width: 100%;
   height: auto;
 }
-header > .navigation > ul {
+header > div > .navigation > ul {
   width: 100%;
   height: auto;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 15px;
 }
-header > .navigation > ul > li {
+header > div > .navigation > ul > li {
   margin: 10px;
   display: flex;
   align-items: center;
@@ -106,31 +297,44 @@ main {
   width: 100%;
   height: auto;
 }
+main section:nth-child(1) {
+  background-color: #fafafa;
+}
+main section:nth-child(2) {
+  background-color: #f4f5f7;
+}
 main .intro {
   width: 100%;
   height: auto;
-  background-color: hsl(0deg, 0%, 100%);
   background-image: url(./public/icons/bg-intro-mobile.svg);
+  background-color: hsl(0deg, 0%, 100%);
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
   padding: 20px;
-  margin-bottom: 20px;
 }
-main .intro > .mockups {
+main .intro > .intro-block {
+  width: 100%;
+  max-width: 1120px;
+}
+main .intro > .intro-block > .mockups {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
   background: transparent;
 }
-main .intro > .mockups > img {
+main .intro > .intro-block > .mockups > img {
   width: 100%;
   height: auto;
 }
-main .intro .block {
+main .intro > .intro-block .block {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
-main .intro .block > h2 {
+main .intro > .intro-block .block > h2 {
+  width: 100%;
+  max-width: 290px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -138,7 +342,7 @@ main .intro .block > h2 {
   line-height: 40px;
   margin-bottom: 20px;
 }
-main .intro .block > p {
+main .intro > .intro-block .block > p {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -148,8 +352,8 @@ main .intro .block > p {
 }
 main .features {
   width: 100%;
+  max-width: 1120px;
   height: auto;
-  background-color: hsl(0deg, 0%, 98%);
 }
 main .features .block {
   width: 100%;
@@ -212,10 +416,12 @@ main .features .features-list > li > p {
 }
 .footer .level1 > .socials-infos {
   width: 100%;
+  max-width: 571px;
   height: auto;
 }
 .footer .level1 > .socials-infos .socials {
   width: 100%;
+  max-width: 185px;
   height: auto;
   margin-bottom: 30px;
 }
@@ -266,6 +472,7 @@ main .features .features-list > li > p {
   margin-bottom: 20px;
 }
 .footer .level1 > .copy > div > p {
+  text-align: center;
   width: 100%;
   height: auto;
   font-size: 14px;

@@ -1,3 +1,10 @@
+// imports tablette version
+@import './scss/tablette/intro.scss';
+@import './scss/tablette/features.scss';
+@import './scss/tablette/footer.scss';
+
+// mixins import
+@import './scss/mixins.scss';
 //Colors
 
 //Primary
@@ -104,32 +111,39 @@ $White: hsl(0, 0%, 100%);
 header {
 	width: 100%;
 	height: auto;
-	background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+	background-color: $White;
 	position: fixed;
-
-	>.logo-brand {
+	
+	>div {
 		width: 100%;
-		height: auto;
-		background-color: $White;
-	}
+		max-width: 1120px;
+		background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+		align-self: center;
 
-	>.navigation {
-		width: 100%;
-		height: auto;
-
-		>ul {
+		>.logo-brand {
 			width: 100%;
 			height: auto;
 			background-color: $White;
-			border-radius: 15px;
+		}
 
-			>li {
-				margin: 10px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-weight: 400;
-				font-size: 14px;
+		>.navigation {
+			width: 100%;
+			height: auto;
+
+			>ul {
+				width: 100%;
+				height: auto;
+				background-color: $White;
+				border-radius: 15px;
+
+				>li {
+					margin: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: 400;
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -139,56 +153,74 @@ main {
 	width: 100%;
 	height: auto;
 
+	section {
+		&:nth-child(1) {
+			background-color: #fafafaff;
+		}
+		
+		&:nth-child(2) {
+			background-color: #f4f5f7ff;
+		}
+	}
+	
 	.intro {
 		width: 100%;
 		height: auto;
-		background-color: $White;
 		background-image: url(./public/icons/bg-intro-mobile.svg);
+		background-color: $White;
 		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: contain;
 		padding: 20px;
-		margin-bottom: 20px;
 
-		>.mockups {
+		>.intro-block {
 			width: 100%;
-			height: auto;
-			margin-bottom: 30px;
-			background: transparent;
-
-			>img {
+			max-width: 1120px;
+			
+			>.mockups {
 				width: 100%;
 				height: auto;
+				margin-bottom: 30px;
+				background: transparent;
+	
+				>img {
+					width: 100%;
+					height: auto;
+				}
 			}
-		}
-
-		.block {
-			width: 100%;
-			height: auto;
-			margin-bottom: 30px;
-
-			>h2 {
-				text-align: center;
-				font-size: 30px;
-				font-weight: 700;
-				color: $Dark-Blue;
-				line-height: 40px;
-				margin-bottom: 20px;
-			}
-
-			>p {
-				text-align: center;
-				font-size: 14px;
-				font-weight: 400;
-				color: $Grayish-Blue;
-				line-height: 20px;
-				margin-bottom: 20px;
+	
+			.block {
+				width: 100%;
+				height: auto;
+				margin-bottom: 30px;
+	
+				>h2 {
+					width: 100%;
+					max-width: 290px;
+					text-align: center;
+					font-size: 30px;
+					font-weight: 700;
+					color: $Dark-Blue;
+					line-height: 40px;
+					margin-bottom: 20px;
+				}
+	
+				>p {
+					text-align: center;
+					font-size: 14px;
+					font-weight: 400;
+					color: $Grayish-Blue;
+					line-height: 20px;
+					margin-bottom: 20px;
+				}
 			}
 		}
 	}
 
 	.features {
 		width: 100%;
+		max-width: 1120px;
 		height: auto;
-		background-color: $Very-Light-Gray;
 
 		.block {
 			width: 100%;
@@ -261,10 +293,12 @@ main {
 
 		>.socials-infos {
 			width: 100%;
+			max-width: 571px;
 			height: auto;
 
 			.socials {
 				width: 100%;
+				max-width: 185px;
 				height: auto;
 				margin-bottom: 30px;
 
@@ -331,6 +365,7 @@ main {
 				}
 
 				>p {
+					text-align: center;
 					width: 100%;
 					height: auto;
 					font-size: 14px;

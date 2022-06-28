@@ -1,0 +1,83 @@
+// mixins import
+@import '../mixins.scss';
+
+.features {
+  // code set for tablet
+  >.block {
+    @include devices(600) {
+      max-width: 500px;
+      align-self: center;
+    }
+
+    @include devices(700) {
+      max-width: 550px;
+      align-self: flex-start !important;
+    }
+
+    >h2 {
+      @include devices (700) {
+        font-size: 32px !important;
+        text-align: left !important;
+      }
+    }
+
+    >p {
+      @include devices (700) {
+        font-size: 15px !important;
+        text-align: left !important;
+      }
+    }
+
+  }
+
+  .features-list {
+    @include devices(420) {
+      width: 100%;
+      height: auto;
+      align-self: center;
+    }
+
+    @include devices(600) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include devices(700) {
+      justify-content: space-between !important;
+    }
+
+    >li {
+      @include devices(420) {
+        max-width: 220px;
+      }
+
+      @include devices(600) {
+        width: 45%;
+      }
+
+      @include devices (700) {
+        align-items: flex-start !important;
+
+        >img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+
+        >h3 {
+          font-size: 18px !important;
+        }
+
+      }
+
+      >p {
+        @include devices(700) {
+          text-align: start !important;
+          font-size: 13px !important;
+          font-weight: 400 !important;
+          max-width: 204px;
+        }
+      }
+    }
+  }
+}

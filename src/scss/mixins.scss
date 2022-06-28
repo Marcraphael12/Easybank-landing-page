@@ -1,0 +1,20 @@
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+	@if $breakpoint == 420 {    
+		@media only screen and (min-width: 420px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 600 {
+		@media only screen and (min-width: 600px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 700 {
+		@media only screen and (min-width: 700px) {
+			@content;
+		}
+	}
+}
