@@ -111,32 +111,39 @@ $White: hsl(0, 0%, 100%);
 header {
 	width: 100%;
 	height: auto;
-	background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+	background-color: $White;
 	position: fixed;
-
-	>.logo-brand {
+	
+	>div {
 		width: 100%;
-		height: auto;
-		background-color: $White;
-	}
+		max-width: 1120px;
+		background: linear-gradient(180deg, rgba(32, 34, 54, 0.748) 0%, hsla(233, 8%, 62%, 0.379) 70%);
+		align-self: center;
 
-	>.navigation {
-		width: 100%;
-		height: auto;
-
-		>ul {
+		>.logo-brand {
 			width: 100%;
 			height: auto;
 			background-color: $White;
-			border-radius: 15px;
+		}
 
-			>li {
-				margin: 10px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-weight: 400;
-				font-size: 14px;
+		>.navigation {
+			width: 100%;
+			height: auto;
+
+			>ul {
+				width: 100%;
+				height: auto;
+				background-color: $White;
+				border-radius: 15px;
+
+				>li {
+					margin: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: 400;
+					font-size: 14px;
+				}
 			}
 		}
 	}
