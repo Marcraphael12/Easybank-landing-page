@@ -4,6 +4,11 @@
 .footer {
   @include devices(420) {
     .level1 {
+
+      @include devices (700) {
+        flex-direction: row !important;
+        max-width: 1120px;
+      }
       >.socials-infos {
 
         @include devices(600) {
@@ -55,6 +60,14 @@
                 align-items: flex-end;
               }
             }
+          }
+        }
+      }
+
+      >.copy {
+        >div {
+          @include devices(600) {
+            align-items: flex-end;
           }
         }
       }
