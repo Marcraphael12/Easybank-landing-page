@@ -8,6 +8,25 @@
 			max-width: 500px;
 			align-self: center;
 		}
+
+		@include devices(700) {
+			max-width: 550px;
+		}
+
+		>h2 {
+			@include devices (700) {
+				font-size: 32px !important;
+				text-align: left !important;
+			}
+		}
+
+		>p {
+			@include devices (700) {
+				font-size: 15px !important;
+				text-align: left !important;
+			}
+		}
+
 	}
 
 	.features-list {
