@@ -7,14 +7,21 @@
 }
 @media only screen and (min-width: 700px) {
   .intro {
-    background-size: 65% 110% !important;
-    background-position: 100px 0 !important;
+    background-size: 60% 100% !important;
   }
 }
 @media only screen and (min-width: 700px) {
   .intro > .intro-block {
     flex-direction: row-reverse;
     align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .intro > .intro-block > .mockups {
+    height: 800px !important;
+  }
+  .intro > .intro-block > .mockups > img {
+    display: none;
   }
 }
 @media only screen and (min-width: 420px) {
