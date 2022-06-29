@@ -32,7 +32,7 @@ intro.style.backgroundImage = `url(${backgroundMobile})`;
 
 function changeBackground(x) {
   if (x.matches) { // If media query matches
-    intro.style.backgroundImage = `url(${backgroundDesktop})`;
+    intro.style.backgroundImage = `url(${mockups1})`;
   } else {
     intro.style.backgroundImage = `url(${backgroundMobile})`;
   }
