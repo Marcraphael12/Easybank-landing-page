@@ -10,7 +10,7 @@
 	}
 
 	@include devices(700) {
-		
+		background-size: 60% 100% !important;
 	}
 	
 	>.intro-block {
@@ -21,7 +21,7 @@
 
 		>.mockups {
 			@include devices(700) {
-				height: 920px !important;
+				height: 800px !important;
 				>img {
 					display: none;
 				}
