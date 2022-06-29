@@ -10,7 +10,8 @@
 	}
 
 	@include devices(700) {
-		background-image: url('./public/icons/bg-intro-desktop.svg');
+		background-size: 65% 110% !important;
+		background-position: 100px 0 !important;
 	}
 	
 	>.intro-block {
