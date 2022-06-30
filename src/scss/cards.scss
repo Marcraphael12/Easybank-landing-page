@@ -40,7 +40,21 @@
 		}
 
 		>.articles-container {
-
+			@include devices(420) {
+				width: 100%;
+				height: auto;
+				align-self: center;
+			}
+	
+			@include devices(600) {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+	
+			@include devices(700) {
+				justify-content: space-between !important;
+			}
 		}
 	}
 }
