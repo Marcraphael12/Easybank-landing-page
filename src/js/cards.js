@@ -12,8 +12,27 @@ export const card = Datas.map(article => {
 	const image = document.createElement('img');
 	image.setAttribute('src', `${article.image}`)
 
-	// we create an li element to store each article values and append them
-	const atcl = document.createElement('li');
-	atcl.appendChild(image);
-	cards.appendChild(atcl);
+	// the author's name, the title, and the description
+	const author = document.createElement('h3');
+	author.innerText = `${article.author}`;
+
+	const title = document.createElement('h2');
+	title.innerText = `${article.title}`;
+
+	const description = document.createElement('p');
+	description.innerText = `${article.text}`;
+	
+	//we also need a block to keep the author name, the title, and the description
+	const block = document.createElement('div');
+	block.appendChild(author);
+	block.appendChild(title);
+	block.appendChild(description);
+
+	// we create an li element to keep each article values and append them
+	const artcl = document.createElement('li');
+	artcl.appendChild(image);
+	artcl.appendChild(block);
+
+	// Finally we append arcticle element into the global container
+	cards.appendChild(artcl);
 });
