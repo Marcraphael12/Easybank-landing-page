@@ -30,6 +30,7 @@ export const card = Datas.map(article => {
 
 	// we create an li element to keep each article values and append them
 	const artcl = document.createElement('li');
+	artcl.setAttribute('class', `df-col just-spa-bet al-cen`)
 	artcl.appendChild(image);
 	artcl.appendChild(block);
 
