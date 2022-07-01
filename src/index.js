@@ -50,3 +50,6 @@ const burger_close = document.querySelector('.burger-close');
 
 Open_menu(burger_open);
 Close_menu(burger_close);
+
+//articles imports
+import {card} from './js/cards';
