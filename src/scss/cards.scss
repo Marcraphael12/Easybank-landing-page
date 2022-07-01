@@ -55,6 +55,28 @@
 			@include devices(700) {
 				justify-content: space-between !important;
 			}
+
+			>li {
+
+				>img {
+
+				}
+
+				>div {
+
+					>h3 {
+
+					}
+
+					>h2 {
+
+					}
+
+					>p {
+
+					}
+				}
+			}
 		}
 	}
 }
