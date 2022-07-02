@@ -1,0 +1,76 @@
+// mixins import
+@import '../mixins.scss';
+
+.footer {
+  @include devices(420) {
+    .level1 {
+
+      @include devices (700) {
+        flex-direction: row !important;
+        max-width: 1120px;
+      }
+      >.socials-infos {
+
+        @include devices(600) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        >.socials {
+          >img {
+            @include devices(600) {
+              margin-bottom: 40px !important;
+              align-self: flex-start;
+            }
+          }
+
+          >.social {
+            @include devices(600) {
+              margin-top: 10px !important;
+            }
+          }
+        }
+
+        >.infos {
+
+          @include devices(600) {
+            max-width: 290px;
+            padding: 0;
+          }
+
+          align-items: center;
+          
+          >ul {
+            flex-direction: row;
+            max-width: 200px;
+            justify-content: space-between;
+
+            @include devices (600) {
+              max-width: 290px;
+            }
+
+            >li {
+              width: 45%;
+              align-items: flex-start;
+
+              &:last-child {
+                @include devices(600) {
+                  align-items: flex-start;
+                }
+                align-items: flex-end;
+              }
+            }
+          }
+        }
+      }
+
+      >.copy {
+        >div {
+          @include devices(600) {
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
