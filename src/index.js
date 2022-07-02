@@ -1,6 +1,12 @@
 import _ from 'lodash';
 import './style.css';
 
+// images for articles
+import currency from './public/icons/image-currency.jpg';
+import restaurant from './public/icons/image-restaurant.jpg';
+import plane from './public/icons/image-plane.jpg';
+import confetti from './public/icons/image-confetti.jpg';
+
 // background impoert
 import backgroundMobile from './public/icons/bg-intro-mobile.svg';
 import backgroundDesktop from './public/icons/bg-intro-desktop.svg';
@@ -50,3 +56,6 @@ const burger_close = document.querySelector('.burger-close');
 
 Open_menu(burger_open);
 Close_menu(burger_close);
+
+//articles imports
+import {card} from './js/cards';
